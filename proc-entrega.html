@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodle do Processo de Entrega</title>
+</head>
+<body style="margin:0; padding:0;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+        <!-- Pagamento -->
+        <circle cx="50" cy="100" r="40" fill="none" stroke="#000" stroke-width="2">
+            <animate attributeName="r" values="40;45;40" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <text x="50" y="105" text-anchor="middle" font-size="12">Pagamento</text>
+        
+        <!-- Seta -->
+        <line x1="100" y1="100" x2="150" y2="100" stroke="#000" stroke-width="2">
+            <animate attributeName="x2" values="100;150;150" dur="2s" begin="2s" fill="freeze" />
+        </line>
+        <polygon points="150,95 150,105 160,100" fill="#000">
+            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.5s" fill="freeze" />
+        </polygon>
+        
+        <!-- Processamento -->
+        <rect x="170" y="60" width="80" height="80" fill="none" stroke="#000" stroke-width="2">
+            <animate attributeName="stroke-dasharray" values="0,320;320,320" dur="2s" begin="4s" fill="freeze" />
+        </rect>
+        <text x="210" y="105" text-anchor="middle" font-size="12">Processamento</text>
+        
+        <!-- Seta -->
+        <line x1="260" y1="100" x2="310" y2="100" stroke="#000" stroke-width="2">
+            <animate attributeName="x2" values="260;310;310" dur="2s" begin="6s" fill="freeze" />
+        </line>
+        <polygon points="310,95 310,105 320,100" fill="#000">
+            <animate attributeName="opacity" values="0;1" dur="0.5s" begin="7.5s" fill="freeze" />
+        </polygon>
+        
+        <!-- Entrega -->
+        <rect x="330" y="60" width="60" height="80" fill="none" stroke="#000" stroke-width="2">
+            <animate attributeName="stroke-dasharray" values="0,280;280,280" dur="2s" begin="8s" fill="freeze" />
+        </rect>
+        <text x="360" y="105" text-anchor="middle" font-size="12">Entrega</text>
+        
+        <!-- Ícone de check -->
+        <path d="M345 100 L355 110 L375 90" fill="none" stroke="#0a0" stroke-width="3">
+            <animate attributeName="stroke-dasharray" values="0,50;50,50" dur="1s" begin="10s" fill="freeze" />
+        </path>
+    </svg>
+</body>
+</html>
